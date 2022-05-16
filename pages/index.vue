@@ -1,21 +1,23 @@
 <template>
-  <div class="container mx-auto">
-    <div class="bg-white py-6 sm:py-8 lg:py-12">
-      <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-        <p class="text-teal-600 lg:text-lg font-semibold mb-2 md:mb-3">
-          Introducing
-        </p>
-        <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold mb-4 md:mb-6">
-          Revolutionary way to build the web
-        </h2>
-        <p class="max-w-screen-md text-gray-500 md:text-lg">
-          This is a section of some simple filler text, also known as
-          placeholder text. It shares some characteristics of a real written
-          text but is random or otherwise generated.
-        </p>
+  <div>
+    <Head>
+      <Title>Reviewame</Title>
+    </Head>
+    <div class="container mx-auto pb-20 min-h-screen">
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+          <p class="text-teal-600 lg:text-lg font-semibold mb-2 md:mb-3">
+            Review de Restaurantes
+          </p>
+          <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold mb-4 md:mb-6">
+            Información Para Que Otros Aprendas
+          </h2>
+          <p class="max-w-screen-md text-gray-500 md:text-lg">
+            Trataremos de ser lo más honestos posible :)
+          </p>
+        </div>
       </div>
-    </div>
-    <main>
+
       <div class="inset-0 flex items-center" aria-hidden="true">
         <div class="w-full border-t-2 border-teal-900"></div>
       </div>
@@ -39,7 +41,7 @@
                   <span class="text-sm text-gray-500">August 20.20.21</span>
                   <p class="mt-3 text-lg font-medium leading-6">
                     <a
-                      href="./blog-post.html"
+                      href=""
                       class="text-xl text-neutral-600 group-hover:text-gray-500 lg:text-2xl"
                     >
                       {{ example.name }}
@@ -54,12 +56,13 @@
           </div>
         </div>
       </section>
-    </main>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
+  scrollToTop: true,
   data() {
     return {
       examples: [

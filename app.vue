@@ -1,7 +1,16 @@
 <template>
-  <div>
-    <!-- Markup shared across all pages, ex: NavBar -->
-    <NavBar />
-    <NuxtPage />
-  </div>
+  <NavBar />
+  <NuxtPage />
+  <Footer />
 </template>
+
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.2s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+</style>

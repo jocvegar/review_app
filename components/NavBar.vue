@@ -9,12 +9,12 @@ let open = ref(false);
       class="flex flex-col max-w-screen p-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"
     >
       <div class="flex flex-row items-center justify-between lg:justify-start">
-        <a
-          href="./index.html"
+        <NuxtLink
+          to="/"
           class="text-lg font-bold tracking-tighter text-teal-600 transition duration-500 ease-in-out transform tracking-relaxed lg:pr-8"
         >
-          wickedblocks
-        </a>
+          Comedero
+        </NuxtLink>
         <button
           class="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
           @click="open = !open"
@@ -39,17 +39,12 @@ let open = ref(false);
       <div
         class="hidden flex-col items-center flex-grow pb-4 border-teal-600 md:pb-0 md:flex md:justify-end md:flex-row lg:border-l-2 lg:pl-2"
       >
-        <a
+        <nuxt-link
           class="px-4 py-2 mt-2 text-md text-gray-500 md:mt-0 hover:text-teal-600 focus:outline-none focus:shadow-outline"
-          href="#"
-          >About</a
+          to="/about"
         >
-        <a
-          class="px-4 py-2 mt-2 text-md text-gray-500 md:mt-0 hover:text-teal-600 focus:outline-none focus:shadow-outline"
-          href="#"
-          >Contact</a
-        >
-
+          Acerca
+        </nuxt-link>
         <div class="inline-flex items-center gap-2 list-none lg:ml-auto">
           <button
             class="items-center block px-10 py-3 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-teal-600 rounded-xl hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
