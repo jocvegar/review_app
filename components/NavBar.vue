@@ -59,18 +59,13 @@ let open = ref(false);
           :class="{ flex: open, hidden: !open }"
           class="flex-col items-center flex-grow pb-4 border-teal-600 md:pb-0 md:flex md:justify-end md:flex-row lg:border-l-2 lg:pl-2"
         >
-          <a
+          <nuxt-link
             class="px-4 py-2 mt-2 text-md text-gray-500 md:mt-0 hover:text-teal-600 focus:outline-none focus:shadow-outline"
-            href="#"
+            to="/about"
+            @click="open = !open"
           >
             About
-          </a>
-          <a
-            class="px-4 py-2 mt-2 text-md text-gray-500 md:mt-0 hover:text-teal-600 focus:outline-none focus:shadow-outline"
-            href="#"
-          >
-            Contact
-          </a>
+          </nuxt-link>
           <div class="inline-flex items-center gap-2 list-none lg:ml-auto">
             <button
               class="items-center block px-10 py-3 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-teal-600 rounded-xl hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
@@ -87,7 +82,7 @@ let open = ref(false);
 <style>
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 0.5s ease;
+  transition: opacity 0.15s ease;
 }
 
 .v-enter-from,

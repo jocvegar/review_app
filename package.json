@@ -10,5 +10,8 @@
     "@nuxtjs/tailwindcss": "^5.0.4",
     "faker-nuxt": "^6.0.0-alpha.6",
     "nuxt": "3.0.0-rc.3"
+  },
+  "dependencies": {
+    "firebase-admin": "^10.2.0"
   }
 }
